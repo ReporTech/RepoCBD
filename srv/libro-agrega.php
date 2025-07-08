@@ -26,7 +26,7 @@ ejecutaServicio(function () {
  $id = $pdo->lastInsertId();
 
  $encodeId = urlencode($id);
- devuelveCreated("/srv/LIRBO.php?id=$encodeId", [
+ devuelveCreated("/srv/libro.php?id=$encodeId", [
   "id" => ["value" => $id],
   "titulo" => ["value" => $titulo],
   "autor" => ["value" => $autor],
